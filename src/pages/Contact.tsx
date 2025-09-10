@@ -14,15 +14,6 @@ const Contact = () => {
       details: "Best for account-specific issues, billing questions, and technical support."
     },
     {
-      title: "Control Panel Support",
-      description: "Technical support and assistance available through the server control panel.",
-      icon: MessageCircle,
-      href: "https://panel.acenodes.co.uk",
-      availability: "24/7 Available",
-      recommended: false,
-      details: "Ideal for server management questions and technical configurations."
-    },
-    {
       title: "Discord Support",
       description: "Join our Discord community for real-time support and to connect with other users.",
       icon: MessageCircle,
@@ -84,7 +75,7 @@ const Contact = () => {
         </Alert>
 
         {/* Support Channels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {supportChannels.map((channel, index) => (
             <Card 
               key={index} 
