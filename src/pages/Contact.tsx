@@ -21,6 +21,15 @@ const Contact = () => {
       availability: "24/7 Available",
       recommended: false,
       details: "Ideal for server management questions and technical configurations."
+    },
+    {
+      title: "Discord Support",
+      description: "Join our Discord community for real-time support and to connect with other users.",
+      icon: MessageCircle,
+      href: "https://discord.acenodes.co.uk",
+      availability: "Community-Based",
+      recommended: false,
+      details: "Perfect for quick questions, community help, and staying updated with announcements."
     }
   ];
 
@@ -75,7 +84,7 @@ const Contact = () => {
         </Alert>
 
         {/* Support Channels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {supportChannels.map((channel, index) => (
             <Card 
               key={index} 
