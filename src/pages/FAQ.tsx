@@ -79,7 +79,7 @@ const FAQ = () => {
         },
         {
           question: "Do you offer Discord support?",
-          answer: "Yes, we may have a Discord community for announcements and community support. Check your dashboard or contact our team for Discord server information."
+          answer: "Yes, we have a Discord server for community support, announcements, and direct interaction with our team and other users. Join us at discord.acenodes.co.uk for real-time assistance and community discussions."
         }
       ]
     },
