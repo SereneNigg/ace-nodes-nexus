@@ -176,161 +176,501 @@
             </p>
           </div>
 
-          <!-- Policies Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <!-- Acceptable Use Policy -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-blue-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                  </svg>
+          <!-- Comprehensive Terms of Service Content -->
+          
+          <!-- Acceptable Use Policy Section -->
+          <section id="acceptable-use-policy" class="mb-16">
+            <div class="card-shadow rounded-lg bg-card border border-border">
+              <div class="p-8 border-b border-border">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="text-3xl font-bold gradient-text">Acceptable Use Policy</h2>
+                    <p class="text-muted-foreground">Guidelines for appropriate use of AceNodes services</p>
+                  </div>
                 </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  Acceptable Use Policy
-                </h3>
               </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  Guidelines for appropriate use of AceNodes services and prohibited activities.
-                </p>
-                <a href="/aup.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+              
+              <div class="p-8 space-y-8">
+                <!-- Purpose -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Purpose</h3>
+                  <p class="text-muted-foreground leading-relaxed">
+                    This Acceptable Use Policy (AUP) outlines the acceptable use of AceNodes hosting services. 
+                    All customers must comply with this policy to ensure the security, reliability, and legal 
+                    compliance of our services. Customers must not use our services to host, distribute, or 
+                    engage in any illegal content, spam, or harmful activities.
+                  </p>
+                </div>
 
-            <!-- Cookie Policy -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-green-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                  </svg>
+                <!-- Prohibited Activities -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Prohibited Activities</h3>
+                  <div class="bg-destructive/5 border border-destructive/20 rounded-lg p-6 mb-6">
+                    <div class="flex items-center space-x-2 mb-4">
+                      <svg class="w-5 h-5 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.728-.833-2.498 0L5.232 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                      </svg>
+                      <span class="font-medium text-foreground">The following activities are strictly prohibited:</span>
+                    </div>
+                  </div>
+                  
+                  <ul class="space-y-3">
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Unauthorized access attempts to any system or network</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Hosting, distributing, or transmitting malware, viruses, or harmful software</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Hosting phishing websites or content designed to steal personal information</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Sending unsolicited bulk emails (spam) or promotional material</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Any activity that violates applicable local, national, or international laws</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Content that infringes on intellectual property rights</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Hosting illegal file sharing or piracy content</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
+                      <span class="text-muted-foreground">Any activity that degrades network performance for other users</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  Cookie Policy
-                </h3>
-              </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  Information about cookies used on our website and how to manage them.
-                </p>
-                <a href="/cookies.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
 
-            <!-- Data Retention -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-purple-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
-                  </svg>
-                </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  Data Retention & Deletion Policy
-                </h3>
-              </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  How we handle, retain, and delete customer data and backups.
-                </p>
-                <a href="/data-retention.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+                <!-- Enforcement -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Enforcement</h3>
+                  <p class="text-muted-foreground mb-6 leading-relaxed">
+                    Violations of this Acceptable Use Policy may result in immediate action to protect 
+                    our infrastructure and other customers. Enforcement actions may include:
+                  </p>
+                  
+                  <ul class="space-y-3 mb-6">
+                    <li class="flex items-start space-x-3">
+                      <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-primary text-sm font-medium">1</span>
+                      </div>
+                      <span class="text-muted-foreground">Warning and request for immediate compliance</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-primary text-sm font-medium">2</span>
+                      </div>
+                      <span class="text-muted-foreground">Temporary suspension of service</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-primary text-sm font-medium">3</span>
+                      </div>
+                      <span class="text-muted-foreground">Permanent termination of service</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span class="text-primary text-sm font-medium">4</span>
+                      </div>
+                      <span class="text-muted-foreground">Legal action if required by law or regulation</span>
+                    </li>
+                  </ul>
 
-            <!-- DMCA -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-orange-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.728-.833-2.498 0L5.232 16.5c-.77.833.192 2.5 1.732 2.5z"/>
-                  </svg>
+                  <div class="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z M4 7l4.94 2.06a2 2 0 002.12 0L16 7"/>
+                      </svg>
+                      <span class="font-medium text-foreground">Investigation Process:</span>
+                    </div>
+                    <p class="text-muted-foreground">
+                      All reported violations are investigated thoroughly. Customers will be contacted during 
+                      the investigation process and given an opportunity to respond to allegations before final action is taken.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  DMCA & Abuse Reporting Policy
-                </h3>
-              </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  Procedures for reporting copyright infringement and abuse complaints.
-                </p>
-                <a href="/dmca.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
             </div>
+          </section>
 
-            <!-- Security Policy -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-red-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                  </svg>
+          <!-- Cookie Policy Section -->
+          <section id="cookie-policy" class="mb-16">
+            <div class="card-shadow rounded-lg bg-card border border-border">
+              <div class="p-8 border-b border-border">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9 3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="text-3xl font-bold gradient-text">Cookie Policy</h2>
+                    <p class="text-muted-foreground">How we use cookies to enhance your experience</p>
+                  </div>
                 </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  Security Policy
-                </h3>
               </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  Technical and organizational measures we maintain to protect data.
-                </p>
-                <a href="/security.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+              
+              <div class="p-8 space-y-8">
+                <!-- What Are Cookies -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">What Are Cookies?</h3>
+                  <p class="text-muted-foreground leading-relaxed mb-4">
+                    Cookies are small text files that are stored on your device when you visit our website. 
+                    They help us provide you with a better browsing experience by remembering your preferences 
+                    and improving site functionality.
+                  </p>
+                  <div class="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z M4 7l4.94 2.06a2 2 0 002.12 0L16 7"/>
+                      </svg>
+                      <span class="font-medium text-foreground">Cookie Consent:</span>
+                    </div>
+                    <p class="text-muted-foreground">
+                      By using our website, you agree to our cookie usage as described in this policy. 
+                      You can manage cookie preferences through your browser settings at any time.
+                    </p>
+                  </div>
+                </div>
 
-            <!-- SLA -->
-            <div class="card-shadow hover:glow-effect transition-all duration-500 group border border-border/50 hover:border-primary/50 rounded-lg bg-card">
-              <div class="p-6 text-center border-b border-border">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors duration-300">
-                  <svg class="w-6 h-6 text-cyan-400 group-hover:text-primary transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                  </svg>
+                <!-- Types of Cookies -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-6">Types of Cookies We Use</h3>
+                  <div class="space-y-6">
+                    <!-- Essential Cookies -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-start justify-between mb-3">
+                        <h4 class="text-lg font-semibold text-foreground">Essential Cookies</h4>
+                        <div class="px-3 py-1 rounded-full text-xs font-medium bg-gaming-green/10 text-gaming-green">
+                          Required
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground mb-4 leading-relaxed">
+                        Required for basic website functionality and security. These cannot be disabled.
+                      </p>
+                      <div>
+                        <h5 class="text-sm font-medium text-foreground mb-2">Examples:</h5>
+                        <ul class="space-y-1">
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Session management</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Security features</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Load balancing</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Analytics Cookies -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-start justify-between mb-3">
+                        <h4 class="text-lg font-semibold text-foreground">Analytics Cookies</h4>
+                        <div class="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent">
+                          Optional
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground mb-4 leading-relaxed">
+                        Help us understand how visitors interact with our website to improve performance.
+                      </p>
+                      <div>
+                        <h5 class="text-sm font-medium text-foreground mb-2">Examples:</h5>
+                        <ul class="space-y-1">
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Page views</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>User behavior</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Performance metrics</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Preference Cookies -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-start justify-between mb-3">
+                        <h4 class="text-lg font-semibold text-foreground">Preference Cookies</h4>
+                        <div class="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent">
+                          Optional
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground mb-4 leading-relaxed">
+                        Remember your settings and preferences for a personalized experience.
+                      </p>
+                      <div>
+                        <h5 class="text-sm font-medium text-foreground mb-2">Examples:</h5>
+                        <ul class="space-y-1">
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Language settings</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Theme preferences</span>
+                          </li>
+                          <li class="text-sm text-muted-foreground flex items-center space-x-2">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                            <span>Dashboard layout</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="text-xl group-hover:gradient-text transition-all duration-300">
-                  Service Level Agreement (SLA)
-                </h3>
-              </div>
-              <div class="p-6 text-center">
-                <p class="text-muted-foreground mb-6 leading-relaxed">
-                  Our uptime guarantees, support response times, and service commitments.
-                </p>
-                <a href="/sla.html" class="inline-flex items-center space-x-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300">
-                  <span>Read Policy</span>
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
+
+                <!-- Managing Cookies -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Managing Cookies</h3>
+                  <p class="text-muted-foreground leading-relaxed mb-6">
+                    You can control and manage cookies through your browser settings. Most browsers 
+                    allow you to block or delete cookies, though this may affect website functionality.
+                  </p>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="p-4 bg-secondary/20 rounded-lg">
+                      <h4 class="font-medium text-foreground mb-2">Chrome</h4>
+                      <p class="text-sm text-muted-foreground">
+                        Settings → Privacy and Security → Cookies and other site data
+                      </p>
+                    </div>
+                    <div class="p-4 bg-secondary/20 rounded-lg">
+                      <h4 class="font-medium text-foreground mb-2">Firefox</h4>
+                      <p class="text-sm text-muted-foreground">
+                        Options → Privacy & Security → Cookies and Site Data
+                      </p>
+                    </div>
+                    <div class="p-4 bg-secondary/20 rounded-lg">
+                      <h4 class="font-medium text-foreground mb-2">Safari</h4>
+                      <p class="text-sm text-muted-foreground">
+                        Preferences → Privacy → Manage Website Data
+                      </p>
+                    </div>
+                    <div class="p-4 bg-secondary/20 rounded-lg">
+                      <h4 class="font-medium text-foreground mb-2">Edge</h4>
+                      <p class="text-sm text-muted-foreground">
+                        Settings → Cookies and site permissions → Cookies
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="bg-gaming-orange/5 border border-gaming-orange/20 rounded-lg p-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <svg class="w-5 h-5 text-gaming-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      </svg>
+                      <span class="font-medium text-foreground">Important:</span>
+                    </div>
+                    <p class="text-muted-foreground">
+                      Disabling certain cookies may affect website functionality, including login sessions, 
+                      preferences, and some dashboard features.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <!-- Data Retention & Deletion Policy Section -->
+          <section id="data-retention" class="mb-16">
+            <div class="card-shadow rounded-lg bg-card border border-border">
+              <div class="p-8 border-b border-border">
+                <div class="flex items-center space-x-4 mb-6">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="text-3xl font-bold gradient-text">Data Retention & Deletion Policy</h2>
+                    <p class="text-muted-foreground">How we handle, retain, and delete customer data and backups</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="p-8 space-y-8">
+                <!-- Overview -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Overview</h3>
+                  <p class="text-muted-foreground leading-relaxed mb-4">
+                    This policy explains how AceNodes handles the retention and deletion of customer data. 
+                    We are committed to protecting your privacy and ensuring that your data is handled 
+                    responsibly throughout its lifecycle.
+                  </p>
+                  <div class="bg-primary/5 border border-primary/20 rounded-lg p-6">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                      </svg>
+                      <span class="font-medium text-foreground">Data Protection Commitment:</span>
+                    </div>
+                    <p class="text-muted-foreground">
+                      We retain customer data only as long as necessary to provide our services and comply 
+                      with legal obligations. Data deletion is performed securely and completely.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Data Retention Periods -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-6">Data Retention Periods</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Active Account Data -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-foreground">Active Account Data</h4>
+                          <div class="text-sm text-primary font-medium">During active subscription</div>
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-relaxed">
+                        Customer data, server configurations, and files are retained while your account remains active.
+                      </p>
+                    </div>
+
+                    <!-- Account Termination -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-foreground">Account Termination</h4>
+                          <div class="text-sm text-primary font-medium">30 days</div>
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-relaxed">
+                        After account closure, data is securely deleted within 30 days unless legally required to retain.
+                      </p>
+                    </div>
+
+                    <!-- Backup Retention -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-foreground">Backup Retention</h4>
+                          <div class="text-sm text-primary font-medium">14 days</div>
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-relaxed">
+                        Backups are maintained for up to 14 days and then permanently erased from all systems.
+                      </p>
+                    </div>
+
+                    <!-- Legal Compliance -->
+                    <div class="p-6 bg-secondary/30 rounded-lg">
+                      <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-foreground">Legal Compliance</h4>
+                          <div class="text-sm text-primary font-medium">As required by law</div>
+                        </div>
+                      </div>
+                      <p class="text-muted-foreground text-sm leading-relaxed">
+                        Some data may be retained longer if required by legal obligations or ongoing investigations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Data Deletion Process -->
+                <div>
+                  <h3 class="text-xl font-semibold text-foreground mb-4">Data Deletion Process</h3>
+                  <p class="text-muted-foreground leading-relaxed mb-6">
+                    When you close your account or request data deletion, we follow a comprehensive 
+                    process to ensure your data is completely and securely removed from our systems:
+                  </p>
+                  
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-primary-foreground text-sm font-medium">1</span>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-muted-foreground">Account closure request received and verified</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-primary-foreground text-sm font-medium">2</span>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-muted-foreground">Data marked for deletion in our systems</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-primary-foreground text-sm font-medium">3</span>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-muted-foreground">Secure deletion from primary storage within 7 days</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-primary-foreground text-sm font-medium">4</span>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-muted-foreground">Backup systems purged within 30 days</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                      <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-primary-foreground text-sm font-medium">5</span>
+                      </div>
+                      <div class="flex-1">
+                        <p class="text-muted-foreground">Confirmation of complete data removal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <!-- Important Notice -->
-          <div class="card-shadow bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20 rounded-lg">
+          <div class="card-shadow bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 rounded-lg bg-card">
             <div class="p-8">
               <div class="flex items-start space-x-4">
                 <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -357,13 +697,21 @@
                     </p>
                   </div>
                   <div class="mt-6 flex flex-col sm:flex-row gap-4">
-                    <a href="https://deploy.acenodes.co.uk" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300">
+                    <a 
+                      href="https://deploy.acenodes.co.uk" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors duration-300"
+                    >
                       <span>Access Dashboard</span>
                       <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                       </svg>
                     </a>
-                    <a href="/contact.html" class="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors duration-300">
+                    <a 
+                      href="/contact.html"
+                      class="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors duration-300"
+                    >
                       Contact Support
                     </a>
                   </div>
