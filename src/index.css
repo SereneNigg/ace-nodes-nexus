@@ -16,19 +16,19 @@
     --popover: 224 15% 8%;
     --popover-foreground: 210 20% 95%;
 
-    /* Gaming Blue Primary */
-    --primary: 217 91% 60%;
+    /* Orange Primary */
+    --primary: 25 95% 60%;
     --primary-foreground: 224 15% 6%;
 
-    /* Muted Purple Secondary */
+    /* Warm Orange Secondary */
     --secondary: 224 15% 12%;
     --secondary-foreground: 210 20% 95%;
 
     --muted: 224 15% 10%;
     --muted-foreground: 215 15% 65%;
 
-    /* Purple Accent */
-    --accent: 270 50% 60%;
+    /* Deep Orange Accent */
+    --accent: 15 85% 55%;
     --accent-foreground: 224 15% 6%;
 
     --destructive: 0 84% 60%;
@@ -36,24 +36,24 @@
 
     --border: 224 15% 15%;
     --input: 224 15% 12%;
-    --ring: 217 91% 60%;
+    --ring: 25 95% 60%;
 
     --radius: 0.75rem;
 
-    /* Gaming-specific colors */
-    --neon-blue: 195 100% 60%;
-    --neon-purple: 270 100% 70%;
+    /* Orange-themed colors */
+    --neon-orange: 30 100% 60%;
+    --neon-red: 10 100% 65%;
     --gaming-green: 120 100% 50%;
     --warning-orange: 30 100% 60%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(270 50% 60%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(195 100% 60%) 0%, hsl(270 100% 70%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 60%) 0%, hsl(15 85% 55%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(30 100% 60%) 0%, hsl(10 100% 65%) 100%);
     --gradient-background: linear-gradient(180deg, hsl(224 15% 6%) 0%, hsl(224 15% 8%) 100%);
 
     /* Shadows & Effects */
-    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
-    --shadow-accent: 0 0 30px hsl(270 50% 60% / 0.2);
+    --shadow-glow: 0 0 20px hsl(25 95% 60% / 0.3);
+    --shadow-accent: 0 0 30px hsl(15 85% 55% / 0.2);
     --shadow-card: 0 8px 32px hsl(224 15% 3% / 0.5);
 
     /* Animations */
@@ -111,8 +111,8 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(217 91% 60% / 0.3); }
-    50% { box-shadow: 0 0 30px hsl(217 91% 60% / 0.6); }
+    0%, 100% { box-shadow: 0 0 20px hsl(25 95% 60% / 0.3); }
+    50% { box-shadow: 0 0 30px hsl(25 95% 60% / 0.6); }
   }
 
   .animate-float {
