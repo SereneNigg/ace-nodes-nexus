@@ -216,7 +216,7 @@ const Layout = ({ children }: LayoutProps) => {
 
           <div className="border-t border-border mt-12 pt-8">
             <p className="text-sm text-muted-foreground text-center">
-              © 2024 AceNodes. All rights reserved.
+              © 2025 AceNodes. All rights reserved.
             </p>
           </div>
         </div>
