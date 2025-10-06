@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird - AceNodes Gaming</title>
+    <title>Bird</title>
     <style>
         * {
             margin: 0;
@@ -94,6 +94,53 @@
             transform: scale(1.05);
         }
 
+        .start-screen {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px 70px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            z-index: 20;
+            text-align: center;
+        }
+
+        .start-screen.hide {
+            display: none;
+        }
+
+        .start-screen h1 {
+            color: #ff6b35;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .start-screen p {
+            color: white;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .start-screen button {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .start-screen button:hover {
+            background: #ff8555;
+            transform: scale(1.05);
+        }
+
         .instructions {
             color: white;
             margin-top: 20px;
@@ -104,14 +151,19 @@
 </head>
 <body>
     <div class="game-container">
+        <div class="start-screen" id="startScreen">
+            <h1>Bird</h1>
+            <p>Press SPACE or Click to Flap</p>
+            <button onclick="startGame()">Start Game</button>
+        </div>
         <div class="score" id="score">0</div>
         <canvas id="gameCanvas" width="400" height="600"></canvas>
         <div class="game-over" id="gameOver">
             <h2>Game Over!</h2>
             <p>Score: <span id="finalScore">0</span></p>
+            <p style="font-size: 16px; color: #ccc;">Press SPACE to restart</p>
             <button onclick="restartGame()">Play Again</button>
         </div>
-        <div class="instructions">Press SPACE or Click to Flap</div>
     </div>
 
     <script>
@@ -120,6 +172,7 @@
         const scoreElement = document.getElementById('score');
         const gameOverElement = document.getElementById('gameOver');
         const finalScoreElement = document.getElementById('finalScore');
+        const startScreenElement = document.getElementById('startScreen');
 
         // Set canvas to full screen
         function resizeCanvas() {
@@ -142,7 +195,8 @@
 
         let pipes = [];
         let score = 0;
-        let gameRunning = true;
+        let gameRunning = false;
+        let gameStarted = false;
         let frameCount = 0;
         const pipeGap = 150;
         const pipeWidth = 60;
@@ -264,10 +318,17 @@
         }
 
         function gameLoop() {
-            if (!gameRunning) return;
-
             // Clear canvas
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (!gameStarted) {
+                // Draw bird in starting position even before game starts
+                drawBird();
+                requestAnimationFrame(gameLoop);
+                return;
+            }
+
+            if (!gameRunning) return;
 
             // Create new pipes
             frameCount++;
@@ -287,8 +348,14 @@
         }
 
         function jump() {
-            if (!gameRunning) return;
+            if (!gameRunning || !gameStarted) return;
             bird.velocity = bird.jump;
+        }
+
+        function startGame() {
+            startScreenElement.classList.add('hide');
+            gameStarted = true;
+            gameRunning = true;
         }
 
         function gameOver() {
@@ -306,14 +373,17 @@
             gameRunning = true;
             scoreElement.textContent = '0';
             gameOverElement.classList.remove('show');
-            gameLoop();
         }
 
         // Controls
         document.addEventListener('keydown', (e) => {
             if (e.code === 'Space') {
                 e.preventDefault();
-                jump();
+                if (gameOverElement.classList.contains('show')) {
+                    restartGame();
+                } else {
+                    jump();
+                }
             }
         });
 
