@@ -6,84 +6,88 @@
 
 @layer base {
   :root {
-    /* Dark Gaming Theme */
-    --background: 224 15% 6%;
-    --foreground: 210 20% 95%;
+    /* Professional Dark Theme */
+    --background: 222 20% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 224 15% 8%;
-    --card-foreground: 210 20% 95%;
+    /* Card Elements */
+    --card: 222 18% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 224 15% 8%;
-    --popover-foreground: 210 20% 95%;
+    /* Popover */
+    --popover: 222 18% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Orange Primary */
-    --primary: 25 95% 60%;
-    --primary-foreground: 224 15% 6%;
+    /* Primary - Professional Orange */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Warm Orange Secondary */
-    --secondary: 224 15% 12%;
-    --secondary-foreground: 210 20% 95%;
+    /* Secondary - Refined Gray */
+    --secondary: 222 15% 14%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 224 15% 10%;
-    --muted-foreground: 215 15% 65%;
+    /* Muted */
+    --muted: 222 14% 16%;
+    --muted-foreground: 0 0% 62%;
 
-    /* Deep Orange Accent */
-    --accent: 15 85% 55%;
-    --accent-foreground: 224 15% 6%;
+    /* Accent - Deep Red */
+    --accent: 358 75% 59%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 20% 95%;
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 224 15% 15%;
-    --input: 224 15% 12%;
-    --ring: 25 95% 60%;
+    /* Borders & Input */
+    --border: 222 15% 18%;
+    --input: 222 15% 18%;
+    --ring: 25 95% 53%;
 
+    /* Border Radius */
     --radius: 0.75rem;
 
-    /* Orange-themed colors */
-    --neon-orange: 30 100% 60%;
-    --neon-red: 10 100% 65%;
-    --gaming-green: 120 100% 50%;
-    --warning-orange: 30 100% 60%;
+    /* Custom Professional Colors */
+    --neon-orange: 25 95% 53%;
+    --neon-red: 358 75% 59%;
+    --gaming-green: 142 71% 45%;
+    --warning-orange: 38 92% 50%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(25 95% 60%) 0%, hsl(15 85% 55%) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(30 100% 60%) 0%, hsl(10 100% 65%) 100%);
-    --gradient-background: linear-gradient(180deg, hsl(224 15% 6%) 0%, hsl(224 15% 8%) 100%);
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 90% 55%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(358 75% 59%) 0%, hsl(340 78% 56%) 100%);
+    --gradient-background: linear-gradient(180deg, hsl(222 20% 7%) 0%, hsl(222 18% 10%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(222 18% 10%) 0%, hsl(222 20% 7%) 100%);
 
-    /* Shadows & Effects */
-    --shadow-glow: 0 0 20px hsl(25 95% 60% / 0.3);
-    --shadow-accent: 0 0 30px hsl(15 85% 55% / 0.2);
-    --shadow-card: 0 8px 32px hsl(224 15% 3% / 0.5);
+    /* Professional Shadows */
+    --shadow-glow: 0 10px 50px -12px hsl(25 95% 53% / 0.35);
+    --shadow-accent: 0 10px 50px -12px hsl(358 75% 59% / 0.25);
+    --shadow-card: 0 4px 24px -4px hsl(0 0% 0% / 0.25);
+    --shadow-elevated: 0 8px 32px -6px hsl(0 0% 0% / 0.3);
 
-    /* Animations */
+    /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Specific */
+    --sidebar-background: 222 18% 8%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 15% 14%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 222 15% 16%;
+    --sidebar-ring: 25 95% 53%;
   }
 }
 
-/* Custom Components */
+/* Professional Components */
 @layer components {
+  /* Text Effects */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-warning-orange to-accent bg-clip-text text-transparent;
   }
 
+  /* Shadow Effects */
   .glow-effect {
     box-shadow: var(--shadow-glow);
   }
@@ -96,31 +100,62 @@
     box-shadow: var(--shadow-card);
   }
 
+  .card-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Background Effects */
   .gradient-bg {
     background: var(--gradient-background);
   }
 
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Border Effects */
   .gradient-border {
-    border-image: var(--gradient-primary) 1;
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(var(--card), var(--card)) padding-box,
+                var(--gradient-primary) border-box;
+    border-radius: var(--radius);
+  }
+
+  /* Spacing Utilities */
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
   }
 
   /* Animations */
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%, 100% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-15px); 
+    }
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(25 95% 60% / 0.3); }
-    50% { box-shadow: 0 0 30px hsl(25 95% 60% / 0.6); }
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(25 95% 53% / 0.3); 
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(25 95% 53% / 0.6); 
+    }
   }
 
   .animate-float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
   .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+    animation: pulse-glow 2.5s ease-in-out infinite;
   }
 }
 
